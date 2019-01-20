@@ -43,7 +43,24 @@ h1 {
   padding: 8px;
 }
 
+.ball.good .message {
+  background: #272;
+  border: 4px solid #494;
+}
+
+.ball.bad .message {
+  background: #722;
+  border: 4px solid #944;
+}
+
+.ball.unknown .message {
+  background: #772;
+  border: 4px solid #994;
+}
+
 .ball .message {
+  transition: 1s;
+
   background: #227;
   border: 4px solid #449;
   font-size: 24px;
