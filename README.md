@@ -3,6 +3,7 @@ A simple magic 8 ball service
 
 ## How to use
 
+    npm install
     npm start
 
 Open http://localhost:3000
