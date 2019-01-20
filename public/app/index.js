@@ -8,7 +8,7 @@ const App = (children) => (
 class Magic8Ball extends React.Component {
   state = {
     status: "none",
-    message: ""
+    message: "Shake me!"
   }
 
   getMessage = async () => {
@@ -22,11 +22,9 @@ class Magic8Ball extends React.Component {
     const { status, message } = this.state;
 
     return (
-      <div className={status}>
-        { status && (
-          <p>{message}</p>
-        ) }
-        <button onClick={this.getMessage}>Clicky</button>
+      <div className={`ball ${status}`}>
+        <div className="message">{message}</div>
+        <button onClick={this.getMessage}>Shake</button>
       </div>
     )
   }
