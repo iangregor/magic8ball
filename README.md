@@ -5,6 +5,8 @@ A simple magic 8 ball service
 
     npm start
 
+Open http://localhost:3000
+
 ### Debug
 
     npm run dev
